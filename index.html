@@ -1,0 +1,69 @@
+<html>
+<body>
+<br>
+<center> <h1> <u><i><b>Створив студен Групи ПМ-2</b></i></u> </hr> </center>
+<center> <h1> <u><i><b>Степанович Володимир</b></i></u> </hr> </center>
+<br>
+<script language="JavaScript">
+document.write("Лабараторна робота №15!")
+</script>
+<br>
+<br>
+<form>
+<input type="button" value="Кнопка " onClick="alert('А ето JavaScript')">
+</form>
+</body>
+</html>
+
+<html>
+<head>
+<script language="JavaScript">
+function calculation() {
+var x= 12;
+var y= 10;
+var z= 5;
+var result= Math.sqrt(y)/(Math.sqrt(x*z)*Math.sqrt(x*z)*Math.sqrt(x*z));
+alert(result);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="Рішення Приклада" onClick="calculation()">
+</form>
+</body>
+</html>
+
+
+<html><head>
+<script Language="JavaScript">                 <!-- hide
+var timeStr, dateStr;
+function clock()
+{
+  now= new Date();
+                                       // час 
+  hours = now.getHours();
+  minutes = now.getMinutes();
+  seconds = now.getSeconds();
+  timeStr = "" + hours;
+  timeStr += ((minutes < 10) ? ":0" : ":") + minutes;
+  timeStr += ((seconds < 10) ? ":0" : ":") + seconds;
+  document.clock.time.value = timeStr;
+                                      // дата 
+  date= now.getDate();
+  month= now.getMonth()+1;
+  year= now.getYear();
+  dateStr= "" + year;
+  dateStr+= ((month < 10) ? "/0" : "") + month;
+ dateStr+= "/" + date;
+  document.clock.date.value = dateStr;
+Timer= setTimeout("clock()",1000);
+}                                                // -->
+</script></head>
+<body onLoad="clock()">
+<form name="clock">
+
+  Дата:      <input type="text" name="date" size="8" value="">
+  Годиник:  <input type="text" name="time" size="8"  value=""><br>
+</form>
+</body></html>
